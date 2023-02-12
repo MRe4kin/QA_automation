@@ -1,1 +1,3 @@
 Editing first string
+Second string For merge conflicts
+
