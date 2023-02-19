@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Билеты.рус</title>
+</head>
+<body>
+<h1 id="page_header">Билеты на транспорт онлайн</h1>
+<br/>
+<a class="link_to_tickets_page" href="Page_2.html">Вернуться на главную страницу</a>
+<h1>Покупка билета</h1>
+<form class="text">
+    <p><b>Выбирите пункт отправления</b></p>
+    <select>
+        <option selected disabled>Выбирите предпочитаемый вид транспорта</option>
+        <option>Новосибирск автовокзал</option>
+        <option>Новосибирск железнодорожный вокзал</option>
+    </select>
+    <br/>
+    <br/>
+    <p><b>Выбирите пункт назначения</b></p>
+    <p><input name="destination_point" type="radio" value="Чемал"> пос.Чемал</p>
+    <p><input name="destination_point" type="radio" value="Барнаул" checked> Барнаул</p>
+    <p><b>Выбирите предпочитаемый вид транспорта</b></p>
+    <select size="2" multiple>
+        <option selected disabled>Выбирите предпочитаемый вид транспорта</option>
+        <option value="Автобус">Автобус</option>
+        <option value="Железнодорожный транспорт">Железнодорожный транспорт</option>
+    </select>
+    <br/>
+    <p><b>Выберите желаемую дату путешествия</b></p>
+    <p><input type="checkbox" name="a" value="1417"> В ближайшие 3 дня</p>
+    <p><input type="checkbox" name="a" value="1680"> В ближайшие 3-7 дней</p>
+    <p><input type="checkbox" name="a" value="1883"> В ближайшие 7-14 дней</p>
+    <p><input type="checkbox" name="a" value="1934"> В ближайшие 14-21 дней</p>
+    <p><input size="30"><b>Ведите адрес электронной почты</b></input></p>
+    <p><textarea rows="10" cols="45" name="text">Укажите пожалуйста ваши пожелания</textarea></p>
+</form>
+<button><img src="https://i.imgur.com/fGB4o0g.png" width="200" height="50" alt="Кнопка Найти и купить"></button>
+</body>
+</html>

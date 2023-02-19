@@ -1,0 +1,45 @@
+
+body {
+    background: url(https://cdn1.tu-tu.ru/bus/bld/705c10e198b912f1682b338df678c281.jpg) no-repeat;
+    background-size: 1900px 300px;
+    background-color: #FFE4B5;
+    margin-top: 10%;
+    }
+
+.maps {
+    border: 5px solid #FFA07A;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   }
+
+#page_header {font-size: 60px;
+    color: white;
+    text-align: center;
+    }
+
+a {font-size: 30px
+    }
+
+.text {font-size: 25px;
+    font-weight: 500;
+    }
+
+h1 {font-size: 40px;
+    text-align: center;
+    }
+
+table {margin: auto;
+    }
+
+.link_to_tickets_page {display: block;
+    text-align: center;
+    }
+
+.contacts {display: block;
+    text-align: center;
+    }
+button {
+     background-image: none;
+     background-color: transparent;
+     border: 0;
+     }
