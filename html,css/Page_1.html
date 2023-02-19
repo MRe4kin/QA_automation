@@ -7,36 +7,51 @@
 </head>
 <body>
 <h1 id="page_header">Билеты на транспорт онлайн</h1>
-<br/>
+<br>
 <a class="link_to_tickets_page" href="Page_2.html">Вернуться на главную страницу</a>
 <h1>Покупка билета</h1>
-<form class="text">
+<form class="text" action="/testbase.db" method="post">
     <p><b>Выбирите пункт отправления</b></p>
     <select>
-        <option selected disabled>Выбирите предпочитаемый вид транспорта</option>
+        <option selected disabled>Выберите предпочитаемый вид транспорта</option>
         <option value="Автовокзал">Новосибирск автовокзал</option>
         <option value="Железнодорожный вокзал">Новосибирск железнодорожный вокзал</option>
     </select>
-    <br/>
-    <br/>
+    <br>
+    <br>
     <p><b>Выбирите пункт назначения</b></p>
-    <p><input name="destination_point" type="radio" value="Чемал"> пос.Чемал</p>
-    <p><input name="destination_point" type="radio" value="Барнаул" checked> Барнаул</p>
+    <label>
+    <p><input name="destination_point" type="radio" value="Чемал">пос.Чемал</p>
+    </label>
+    <label>
+    <p><input name="destination_point" type="radio" value="Барнаул" checked>Барнаул</p>
+    </label>
     <p><b>Выбирите предпочитаемый вид транспорта</b></p>
     <select size="2" multiple>
         <option selected disabled>Выбирите предпочитаемый вид транспорта</option>
         <option value="Автобус">Автобус</option>
         <option value="Железнодорожный транспорт">Железнодорожный транспорт</option>
     </select>
-    <br/>
+    <br>
     <p><b>Выберите желаемую дату путешествия</b></p>
-    <p><input type="checkbox" name="a" value="1417"> В ближайшие 3 дня</p>
-    <p><input type="checkbox" name="a" value="1680"> В ближайшие 3-7 дней</p>
-    <p><input type="checkbox" name="a" value="1883"> В ближайшие 7-14 дней</p>
-    <p><input type="checkbox" name="a" value="1934"> В ближайшие 14-21 дней</p>
-    <p><input size="30"><b>Ведите адрес электронной почты</b></input></p>
+
+    <input type="checkbox" id="cb1" value="3" name="В ближайшие 3 дня">
+    <label for="cb1">В ближайшие 3 дня</label>
+    <br>
+    <input type="checkbox" id="cb2" value="7" name="В ближайшие 3-7 дней">
+    <label for="cb2">В ближайшие 3-7 дней</label>
+    <br>
+    <input type="checkbox" id="cb3" value="14" name="В ближайшие 7-14 дней">
+    <label for="cb3">В ближайшие 7-14 дней</label>
+    <br>
+    <input type="checkbox" id="cb4" value="21" name="В ближайшие 14-21 дней">
+    <label for="cb4">В ближайшие 14-21 дней</label>
+    <br>
+    <br>
+    <input type="email" id="mail_area" name="Ведите адрес электронной почты">
+    <label for="mail_area">Ведите адрес электронной почты</label>
     <p><textarea rows="10" cols="45" name="text">Укажите пожалуйста ваши пожелания</textarea></p>
+    <button><img src="https://i.imgur.com/fGB4o0g.png" width="200" height="50" alt="Кнопка Найти и купить"></button>
 </form>
-<button><img src="https://i.imgur.com/fGB4o0g.png" width="200" height="50" alt="Кнопка Найти и купить"></button>
 </body>
 </html>
