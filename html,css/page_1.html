@@ -8,14 +8,14 @@
 <body>
 <h1 id="page_header">Билеты на транспорт онлайн</h1>
 <br>
-<a class="link_to_tickets_page" href="Page_2.html">Вернуться на главную страницу</a>
+<a class="link_to_tickets_page" href="page_2.html">Вернуться на главную страницу</a>
 <h1>Покупка билета</h1>
-<form class="text" action="/testbase.db" method="post">
+<form id="form_id1"class="text" action="/testbase.db" method="post">
     <p><b>Выбирите пункт отправления</b></p>
-    <select>
+    <select name="send_point">
         <option selected disabled>Выберите предпочитаемый вид транспорта</option>
-        <option value="Автовокзал">Новосибирск автовокзал</option>
-        <option value="Железнодорожный вокзал">Новосибирск железнодорожный вокзал</option>
+        <option name="send_point" value="Автовокзал">Новосибирск автовокзал</option>
+        <option name="send_point" value="Железнодорожный вокзал">Новосибирск железнодорожный вокзал</option>
     </select>
     <br>
     <br>
@@ -51,7 +51,7 @@
     <input type="email" id="mail_area" name="Ведите адрес электронной почты">
     <label for="mail_area">Ведите адрес электронной почты</label>
     <p><textarea rows="10" cols="45" name="text">Укажите пожалуйста ваши пожелания</textarea></p>
-    <button><img src="https://i.imgur.com/fGB4o0g.png" width="200" height="50" alt="Кнопка Найти и купить"></button>
+    <button type="submit" form="form_id1"><img src="https://i.imgur.com/fGB4o0g.png" width="200" height="50" alt="Кнопка Найти и купить"></button>
 </form>
 </body>
 </html>

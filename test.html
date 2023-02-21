@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form action="/test.php" method="post">
+    <select name="Sendpoint">
+      <option name="Sendpoint" value="nsk_bus">Новосибирск автовокзал</option>
+      <option name="Sendpoint" value="nsk_rzd">Новосибирск железнодорожный вокзал</option>
+    </select>
+
+
+    <p><b>Выбирите пункт назначения</b></p>
+    <label>
+        <p><input name="destination_point" type="radio" value="Чемал">пос.Чемал</p>
+    </label>
+    <label>
+        <p><input name="destination_point" type="radio" value="Барнаул" checked>Барнаул</p>
+    </label>
+    <button type="submit">send</button>
+</form>
+</body>
+</html>
